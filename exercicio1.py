@@ -4,8 +4,9 @@ from sympy import Limit, Symbol, sqrt, S
 
 # Definindo o valor de c(c=matricula % 10).
 c = (62 % 10)
+# c vai ser igual 2
 
-# Define uma nova função.
+# Definindo as funções a serem resolvidas.
 
 
 def minha_funcao1(x):
