@@ -57,8 +57,7 @@ I3 = Resultado[y]  # Corrente I3
 I2 = I1 - I3  # Corrente I2
 
 print('\nResultado do sistema de equações:')
-print(
-    f'I1 = {I1.evalf(4)} A; I3 = {I3.evalf(4)} A; I2 = {I2.evalf(4)} A')
+print(f'I1 = {I1.evalf(4)} A; I3 = {I3.evalf(4)} A; I2 = {I2.evalf(4)} A')
 
 
 # # Resultado final
