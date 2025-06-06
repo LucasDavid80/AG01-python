@@ -14,9 +14,9 @@ from sympy import Symbol, solve
 
 # Limpa a área do console para facilitar a visualização do resultado.
 print('\n' * 100)
-# Definindo o valor de c (c = matricula % 10).
-c = (62 % 10)
-# c vai ser igual 2
+# Definindo o valor de c(c=matricula % 10).
+matricula = input('Digite o valor da matricula: ')
+c = (int(matricula) % 10)
 
 # Definindo os valores dos resistores.
 R1 = 25   # Ohms

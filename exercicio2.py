@@ -1,9 +1,11 @@
 # Importa Symbol - possibilidade de operações com simbolos.
 from sympy import Derivative, Integral, Symbol, root
 
+# Limpa a área do console para facilitar a visualização do resultado.
+print('\n' * 100)
 # Definindo o valor de c(c=matricula % 10).
-c = (62 % 10)
-# c vai ser igual 2
+matricula = input('Digite o valor da matricula: ')
+c = (int(matricula) % 10)
 
 # Equação da velocidade
 
@@ -12,8 +14,6 @@ def velocidade(t):
     return 6 * (c + 1) * root(t, 5) - 3 * (c+1) * (t**2) + (t / (c + 3)) - 4
 
 
-# Limpa a área do console para facilitar a visualização do resultado.
-print('\n' * 100)
 t = Symbol('t')
 
 # Calcula a integral indefinida da função velocidade que é o deslocamento.

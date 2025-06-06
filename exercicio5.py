@@ -4,9 +4,12 @@
 # e^(x+1)+e^(x-2)+e^x=c+4
 
 from sympy import Symbol, solve, cos, exp, sqrt
-# Definindo o valor de c (c = matricula % 10).
-c = (62 % 10)
-# c vai ser igual 2
+
+# Limpa a área do console para facilitar a visualização do resultado.
+print('\n' * 100)
+# Definindo o valor de c(c=matricula % 10).
+matricula = input('Digite o valor da matricula: ')
+c = (int(matricula) % 10)
 
 
 def primeira_equacao(x):
@@ -20,9 +23,6 @@ def segunda_equacao(x):
 def terceira_equacao(x):
     return exp(x + 1) + exp(x - 2) + exp(x) - (c + 4)
 
-
-# Limpa a área do console para facilitar a visualização do resultado.
-print('\n' * 100)
 
 # Define x como uma variável.
 x = Symbol('x')
